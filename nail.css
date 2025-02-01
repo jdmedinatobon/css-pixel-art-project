@@ -1,0 +1,46 @@
+:root {
+  --nail-c: #a598a7;
+  --nail-shadow-c: #807b8b;
+}
+
+.nail {
+  grid-area: 22 / 12 / span 4 / span 5;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+
+  z-index: 0;
+}
+
+.purple {
+  background: var(--nail-c);
+}
+
+.purple-shadow {
+  background: var(--nail-shadow-c);
+}
+
+.nbox1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.nbox2 {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.nbox3 {
+  grid-area: 3 / 3 / span 2 / span 1;
+}
+
+.nbox4 {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.nbox5 {
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.nbox6 {
+  grid-area: 3 / 4 / span 2 / span 2;
+}

@@ -1,0 +1,68 @@
+:root {
+  --bg-c: #f0f0f0;
+  --out-c: #000000;
+  --head-c: #ffffff;
+  --headshadow-c: #d4d6da;
+}
+
+.theknight {
+  display: grid;
+  grid-template-rows: repeat(36, 1fr);
+  grid-template-columns: repeat(36, 1fr);
+
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--bg-c);
+}
+
+.outline {
+  background: var(--out-c);
+}
+
+.white {
+  background: var(--head-c);
+}
+
+.white-shadow {
+  background: var(--headshadow-c);
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 1080px;
+  width: 50%;
+}
+
+.grid {
+  max-width: 1080px;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}
